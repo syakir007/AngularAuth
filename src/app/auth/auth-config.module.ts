@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { AuthModule, LogLevel } from 'angular-auth-oidc-client';
-
+import { environment } from 'src/environments/environment';
 
 @NgModule({
     imports: [AuthModule.forRoot({
         config: {
             authority: 'https://localhost:5001',
-            redirectUrl: window.location.origin,
-            postLogoutRedirectUri: window.location.origin,
+            redirectUrl: window.location.origin + '/Home',
+            postLogoutRedirectUri: environment.appUrl,
             clientId: 'AngularClient',
             
             scope: 'openid profile verification api1', // 'openid profile ' + your scopes

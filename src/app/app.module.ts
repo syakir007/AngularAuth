@@ -7,10 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthConfigModule } from './auth/auth-config.module';
 import { HttpClientModule } from '@angular/common/http';
+import { LandingPageComponent } from './Pages/landing-page/landing-page.component';
+import { HomepageComponent } from './Pages/homepage/homepage.component';
+import { ApiPageComponent } from './Pages/api-page/api-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LandingPageComponent,
+    HomepageComponent,
+    ApiPageComponent
   ],
   imports: [
     BrowserModule,
