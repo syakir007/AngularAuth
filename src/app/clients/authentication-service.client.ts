@@ -22,4 +22,5 @@ export class AuthenticationClient {
       .logoff()
       .subscribe((result) => console.log(result));
   }
+
 }

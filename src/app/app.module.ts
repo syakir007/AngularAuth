@@ -9,14 +9,16 @@ import { AuthConfigModule } from './auth/auth-config.module';
 import { HttpClientModule } from '@angular/common/http';
 import { LandingPageComponent } from './Pages/landing-page/landing-page.component';
 import { HomepageComponent } from './Pages/homepage/homepage.component';
-import { ApiPageComponent } from './Pages/api-page/api-page.component';
+import { Api1Component } from './Pages/api1/api1.component';
+import { Api2Component } from './Pages/api2/api2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     HomepageComponent,
-    ApiPageComponent
+    Api1Component,
+    Api2Component
   ],
   imports: [
     BrowserModule,
